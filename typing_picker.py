@@ -4,7 +4,7 @@
 typing_options = ["Ben", "Lucy", "Jude", "Max"]
 
 # find a way to pick something
-typing_choice = typing_options[0]
+typing_choice = typing_options[1]
 
 # a way to tell the user what to do
 print typing_choice
