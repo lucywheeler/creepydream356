@@ -5,12 +5,10 @@ import random, urllib2
 url_for_list = "https://raw.githubusercontent.com/lucywheeler/creepydream356/master/typing_options.lst"
 raw_typing_options = urllib2.urlopen(url_for_list)
 list_of_options = raw_typing_options.read()
-
-print "DEBUG - typing options is \n%s" % list_of_options
-typing_options = ["Ben", "Lucy", "Jude", "Max", "Mom", "Dad"]
+real_list = list_of_options.split()
 
 # find a way to pick something
-typing_choice = random.choice(typing_options)
+typing_choice = random.choice(real_list)
 
 # a way to tell the user what to do
 print typing_choice
