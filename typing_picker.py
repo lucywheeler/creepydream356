@@ -11,9 +11,11 @@ real_list = list_of_options.split()
 typing_choice = random.choice(real_list)
 
 # a way to tell the user what to do
-usage = """This is the activity picker program.
+usage = """Usage:
+This is the activity picker program.
 It will give you a random typing option.
-The source of the options is %s
+The source of the options is
+%s
 """ % (url_for_list)
 
 print usage
